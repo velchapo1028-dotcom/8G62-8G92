@@ -1,0 +1,1750 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#050505">
+
+<meta
+    name="description"
+    content="8G62 & 8G92 Premium Customer Service"
+>
+
+<title>8G62 & 8G92 | Premium Service</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #ffffff;
+
+    background: #030303;
+}
+
+
+/* =====================================================
+   ANIMATED BACKGROUND
+===================================================== */
+
+.background {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -10;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(255,193,7,.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(255,140,0,.08),
+            transparent 30%
+        ),
+
+        #030303;
+}
+
+
+/* =====================================================
+   MOVING GLOW
+===================================================== */
+
+.background::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,193,7,.12),
+            rgba(255,193,7,.03) 35%,
+            transparent 70%
+        );
+
+    filter: blur(15px);
+
+    animation:
+        centerGlow 5s ease-in-out infinite;
+}
+
+
+@keyframes centerGlow {
+
+    0%,
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(.85);
+
+        opacity: .55;
+    }
+
+    50% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.25);
+
+        opacity: 1;
+    }
+}
+
+
+/* =====================================================
+   MOVING GRID
+===================================================== */
+
+.grid {
+
+    position: absolute;
+
+    width: 180%;
+
+    height: 180%;
+
+    left: -40%;
+
+    top: -25%;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,193,7,.075) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,193,7,.075) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    transform:
+        perspective(550px)
+        rotateX(62deg)
+        translateY(0);
+
+    opacity: .45;
+
+    animation:
+        gridMove 7s linear infinite;
+}
+
+
+@keyframes gridMove {
+
+    from {
+
+        transform:
+            perspective(550px)
+            rotateX(62deg)
+            translateY(0);
+    }
+
+    to {
+
+        transform:
+            perspective(550px)
+            rotateX(62deg)
+            translateY(45px);
+    }
+}
+
+
+/* =====================================================
+   ORBS
+===================================================== */
+
+.orb {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(8px);
+
+    mix-blend-mode: screen;
+}
+
+
+/* ORB 1 */
+
+.orb.one {
+
+    width: 330px;
+    height: 330px;
+
+    left: -130px;
+    top: 5%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,193,7,.22),
+            rgba(255,193,7,.05) 45%,
+            transparent 72%
+        );
+
+    animation:
+        orbOne 8s ease-in-out infinite;
+}
+
+
+/* ORB 2 */
+
+.orb.two {
+
+    width: 420px;
+    height: 420px;
+
+    right: -180px;
+    top: 30%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,150,0,.17),
+            rgba(255,100,0,.04) 45%,
+            transparent 72%
+        );
+
+    animation:
+        orbTwo 10s ease-in-out infinite;
+}
+
+
+/* ORB 3 */
+
+.orb.three {
+
+    width: 300px;
+    height: 300px;
+
+    left: 20%;
+    bottom: -160px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,193,7,.16),
+            transparent 70%
+        );
+
+    animation:
+        orbThree 7s ease-in-out infinite;
+}
+
+
+@keyframes orbOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+
+        opacity: .45;
+    }
+
+    50% {
+
+        transform:
+            translate(180px,120px)
+            scale(1.25);
+
+        opacity: .9;
+    }
+}
+
+
+@keyframes orbTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+
+        transform:
+            translate(-150px,-100px)
+            scale(1.18);
+    }
+}
+
+
+@keyframes orbThree {
+
+    0%,
+    100% {
+
+        transform:
+            translate(0,0)
+            scale(.9);
+
+        opacity: .3;
+    }
+
+    50% {
+
+        transform:
+            translate(160px,-180px)
+            scale(1.3);
+
+        opacity: .8;
+    }
+}
+
+
+/* =====================================================
+   PARTICLES
+===================================================== */
+
+.particles span {
+
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #ffc107;
+
+    box-shadow:
+        0 0 8px rgba(255,193,7,.9),
+        0 0 20px rgba(255,193,7,.45);
+
+    animation:
+        particleMove 5s linear infinite;
+}
+
+
+/* particle positions */
+
+.particles span:nth-child(1) {
+    left: 8%;
+    top: 75%;
+    animation-duration: 6s;
+}
+
+.particles span:nth-child(2) {
+    left: 18%;
+    top: 40%;
+    animation-duration: 8s;
+}
+
+.particles span:nth-child(3) {
+    left: 31%;
+    top: 82%;
+    animation-duration: 5s;
+}
+
+.particles span:nth-child(4) {
+    left: 45%;
+    top: 25%;
+    animation-duration: 7s;
+}
+
+.particles span:nth-child(5) {
+    left: 60%;
+    top: 72%;
+    animation-duration: 6s;
+}
+
+.particles span:nth-child(6) {
+    left: 73%;
+    top: 30%;
+    animation-duration: 8s;
+}
+
+.particles span:nth-child(7) {
+    left: 87%;
+    top: 65%;
+    animation-duration: 5s;
+}
+
+.particles span:nth-child(8) {
+    left: 94%;
+    top: 18%;
+    animation-duration: 7s;
+}
+
+
+@keyframes particleMove {
+
+    0% {
+
+        transform:
+            translate3d(0,80px,0)
+            scale(.3);
+
+        opacity: 0;
+    }
+
+    20% {
+
+        opacity: 1;
+    }
+
+    50% {
+
+        transform:
+            translate3d(
+                35px,
+                -40px,
+                0
+            )
+            scale(1.2);
+
+        opacity: .8;
+    }
+
+    80% {
+
+        opacity: .5;
+    }
+
+    100% {
+
+        transform:
+            translate3d(
+                -40px,
+                -180px,
+                0
+            )
+            scale(.2);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+.loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(255,193,7,.14),
+            transparent 35%
+        ),
+
+        #030303;
+
+    transition:
+
+        opacity .8s ease,
+        visibility .8s ease;
+}
+
+.loader.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+.loader-logo {
+
+    width: 125px;
+    height: 125px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 0 15px rgba(255,193,7,.55)
+        )
+        drop-shadow(
+            0 0 40px rgba(255,193,7,.25)
+        );
+
+    animation:
+        loaderLogo 1.7s ease-in-out infinite;
+}
+
+
+@keyframes loaderLogo {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.08);
+
+    }
+}
+
+
+.loader-brand {
+
+    margin-top: 20px;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+
+.loader-brand span {
+
+    color: #ffc107;
+
+    margin: 0 7px;
+
+    text-shadow:
+        0 0 15px rgba(255,193,7,.9);
+}
+
+
+.loader-title {
+
+    margin-top: 7px;
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    font-weight: 600;
+
+    color:
+        rgba(255,255,255,.55);
+}
+
+
+.loader-bar {
+
+    width: 190px;
+
+    height: 3px;
+
+    margin-top: 28px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255,255,255,.1);
+
+    position: relative;
+}
+
+
+.loader-bar::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -60%;
+
+    width: 60%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ffc107,
+            #fff,
+            #ffc107,
+            transparent
+        );
+
+    animation:
+        loadingBar 1.1s linear infinite;
+}
+
+
+@keyframes loadingBar {
+
+    from {
+        left: -60%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.wrapper {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    margin: auto;
+
+    padding:
+        45px 20px
+        90px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+
+.logo {
+
+    width: 105px;
+    height: 105px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 0 18px rgba(255,193,7,.35)
+        );
+
+    animation:
+        logoFloat 4s ease-in-out infinite;
+}
+
+
+@keyframes logoFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-7px)
+            rotate(1deg);
+    }
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.brand {
+
+    text-align: center;
+}
+
+
+.brand h1 {
+
+    font-size:
+        clamp(30px, 8vw, 42px);
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #ffc107,
+            #fff
+        );
+
+    background-size: 200% auto;
+
+    color: transparent;
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    animation:
+        textShine 4s linear infinite;
+}
+
+
+@keyframes textShine {
+
+    to {
+
+        background-position:
+            200% center;
+    }
+}
+
+
+.brand p {
+
+    margin-top: 8px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color:
+        rgba(255,255,255,.5);
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.status {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    width: fit-content;
+
+    margin:
+        20px auto 35px;
+
+    padding:
+        8px 15px;
+
+    border:
+        1px solid rgba(255,193,7,.2);
+
+    border-radius: 50px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    backdrop-filter:
+        blur(12px);
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,.7);
+}
+
+
+.status-dot {
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #4cff88;
+
+    box-shadow:
+        0 0 12px rgba(76,255,136,.9);
+
+    animation:
+        statusPulse 1.3s ease-in-out infinite;
+}
+
+
+@keyframes statusPulse {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+        opacity: 1;
+    }
+
+    50% {
+
+        transform: scale(.55);
+
+        opacity: .45;
+    }
+}
+
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.info {
+
+    margin-bottom: 18px;
+}
+
+
+.info h2 {
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+.info p {
+
+    margin-top: 4px;
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,.45);
+}
+
+
+/* =====================================================
+   CONTACT CARD
+===================================================== */
+
+.contact-card {
+
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 14px;
+
+    padding: 2px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,193,7,.4),
+            rgba(255,255,255,.05),
+            rgba(255,193,7,.12)
+        );
+
+    transition:
+        transform .3s ease,
+        filter .3s ease;
+}
+
+
+.contact-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    filter:
+        brightness(1.15);
+}
+
+
+.contact-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    right: -180px;
+    top: -170px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,193,7,.16);
+
+    filter: blur(35px);
+
+    transition: .5s ease;
+}
+
+
+.contact-card:hover::after {
+
+    transform:
+        scale(1.8);
+}
+
+
+.contact-inner {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 78px;
+
+    padding:
+        13px 16px;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15,15,15,.97),
+            rgba(6,6,6,.95)
+        );
+
+    backdrop-filter:
+        blur(15px);
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.badge {
+
+    position: absolute;
+
+    right: 10px;
+    top: 7px;
+
+    padding:
+        3px 8px;
+
+    border:
+        1px solid rgba(255,193,7,.25);
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,193,7,.08);
+
+    color: #ffc107;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.icon {
+
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 13px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,255,255,.06);
+}
+
+
+.icon svg {
+
+    width: 23px;
+    height: 23px;
+}
+
+
+.icon.whatsapp {
+
+    color: #25D366;
+}
+
+
+.icon.telegram {
+
+    color: #29A9EA;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.card-content {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.card-title {
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.card-number {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,.45);
+}
+
+
+/* =====================================================
+   ARROW
+===================================================== */
+
+.arrow {
+
+    margin-left: 10px;
+
+    font-size: 28px;
+
+    color:
+        rgba(255,193,7,.6);
+
+    transition:
+        transform .3s ease;
+}
+
+
+.contact-card:hover .arrow {
+
+    transform:
+        translateX(6px);
+
+    color:
+        #ffc107;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    margin-top: 35px;
+
+    padding-top: 22px;
+
+    text-align: center;
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+}
+
+
+.footer-main {
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color:
+        rgba(255,255,255,.55);
+}
+
+
+.footer-sub {
+
+    margin-top: 6px;
+
+    font-size: 9px;
+
+    color:
+        rgba(255,255,255,.3);
+}
+
+
+/* =====================================================
+   FLOATING WHATSAPP
+===================================================== */
+
+.float-wa {
+
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 500;
+
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    background:
+        #25D366;
+
+    box-shadow:
+        0 8px 30px rgba(37,211,102,.4);
+
+    animation:
+        waPulse 2s ease-in-out infinite;
+
+    transition:
+        transform .3s ease;
+}
+
+
+.float-wa:hover {
+
+    transform:
+        scale(1.1);
+}
+
+
+.float-wa svg {
+
+    width: 28px;
+    height: 28px;
+}
+
+
+@keyframes waPulse {
+
+    0%,
+    100% {
+
+        box-shadow:
+            0 8px 30px rgba(37,211,102,.35),
+            0 0 0 0 rgba(37,211,102,.25);
+    }
+
+    50% {
+
+        box-shadow:
+            0 10px 35px rgba(37,211,102,.55),
+            0 0 0 10px rgba(37,211,102,0);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .wrapper {
+
+        padding:
+            35px 16px
+            80px;
+    }
+
+    .loader-logo {
+
+        width: 105px;
+        height: 105px;
+    }
+
+    .loader-brand {
+
+        font-size: 25px;
+    }
+
+    .loader-title {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+    .logo {
+
+        width: 90px;
+        height: 90px;
+    }
+
+    .brand h1 {
+
+        font-size: 31px;
+    }
+
+    .float-wa {
+
+        width: 52px;
+        height: 52px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="background">
+
+    <div class="grid"></div>
+
+    <div class="orb one"></div>
+
+    <div class="orb two"></div>
+
+    <div class="orb three"></div>
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     LOADING
+===================================================== -->
+
+<div class="loader" id="loader">
+
+    <img
+        src="logo.png"
+        class="loader-logo"
+        alt="8G62 & 8G92"
+    >
+
+    <div class="loader-brand">
+
+        8G62
+        <span>&amp;</span>
+        8G92
+
+    </div>
+
+    <div class="loader-title">
+        PREMIUM SERVICE
+    </div>
+
+    <div class="loader-bar"></div>
+
+</div>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="wrapper">
+
+
+    <!-- LOGO -->
+
+    <div class="logo-container">
+
+        <img
+            src="logo.png"
+            class="logo"
+            alt="8G62 & 8G92"
+        >
+
+    </div>
+
+
+    <!-- BRAND -->
+
+    <div class="brand">
+
+        <h1>
+            8G62 &amp; 8G92
+        </h1>
+
+        <p>
+            Premium Customer Service
+        </p>
+
+    </div>
+
+
+    <!-- STATUS -->
+
+    <div class="status">
+
+        <span class="status-dot"></span>
+
+        Online 24 Jam
+
+    </div>
+
+
+    <!-- INFO -->
+
+    <div class="info">
+
+        <h2>
+            Customer Service
+        </h2>
+
+        <p>
+            Pilih layanan yang ingin Anda hubungi
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         WHATSAPP 8G62
+    ================================================== -->
+
+    <a
+        href="https://wa.me/60179587196"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-card"
+    >
+
+        <span class="badge">
+            8G62
+        </span>
+
+        <div class="contact-inner">
+
+            <div class="icon whatsapp">
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                >
+
+                    <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7c1.8 1 3.5 1.4 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.2-3.5-8.4ZM12.1 21.7c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.1 4.7Zm5.4-7.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.7.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.8 5.2 2.2 1 2.2.7 2.6.7.4 0 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.5-.4Z"/>
+
+                </svg>
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-title">
+                    WhatsApp 8G62
+                </div>
+
+                <div class="card-number">
+                    +60 17-958 7196
+                </div>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         WHATSAPP 8G92
+    ================================================== -->
+
+    <a
+        href="https://wa.me/601170138339"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-card"
+    >
+
+        <span class="badge">
+            8G92
+        </span>
+
+        <div class="contact-inner">
+
+            <div class="icon whatsapp">
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                >
+
+                    <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7c1.8 1 3.5 1.4 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.2-3.5-8.4ZM12.1 21.7c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.1 4.7Zm5.4-7.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.7.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.8 5.2 2.2 1 2.2.7 2.6.7.4 0 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.5-.4Z"/>
+
+                </svg>
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-title">
+                    WhatsApp 8G92
+                </div>
+
+                <div class="card-number">
+                    +60 11-7013 8339
+                </div>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         TELEGRAM 8G62
+    ================================================== -->
+
+    <a
+        href="https://t.me/Racchell_8G62"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-card"
+    >
+
+        <div class="contact-inner">
+
+            <div class="icon telegram">
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                >
+
+                    <path d="M21.4 3.2 2.8 10.4c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.1.9.7.9.5 0 .7-.2 1-.9.7l2.2-2.1 4.7 3.5c.9.5 1.5.3 1.7-.8l3.1-15.8c.3-1.4-.5-2-1.5-1.5ZM8.1 13.1l10.9-6.9c.5-.3.9-.1.5.2l-8.9 8-.3 3.2-1.4-4.5-3.5-1.1c-.8-.3-.8-.6.2-.9l2.5-.9Z"/>
+
+                </svg>
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-title">
+                    Telegram 8G62
+                </div>
+
+                <div class="card-number">
+                    @Racchell_8G62
+                </div>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         TELEGRAM 8G92
+    ================================================== -->
+
+    <a
+        href="https://t.me/Wendy92G"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-card"
+    >
+
+        <div class="contact-inner">
+
+            <div class="icon telegram">
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                >
+
+                    <path d="M21.4 3.2 2.8 10.4c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.1.9.7.9.5 0 .7-.2 1-.9.7l2.2-2.1 4.7 3.5c.9.5 1.5.3 1.7-.8l3.1-15.8c.3-1.4-.5-2-1.5-1.5ZM8.1 13.1l10.9-6.9c.5-.3.9-.1.5.2l-8.9 8-.3 3.2-1.4-4.5-3.5-1.1c-.8-.3-.8-.6.2-.9l2.5-.9Z"/>
+
+                </svg>
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-title">
+                    Telegram 8G92
+                </div>
+
+                <div class="card-number">
+                    @Wendy92G
+                </div>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+            © 2026 8G62 &amp; 8G92
+        </div>
+
+        <div class="footer-sub">
+            Premium Service • Secure • 24 Hours
+        </div>
+
+    </footer>
+
+</main>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a
+    href="https://wa.me/60179587196"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="float-wa"
+    aria-label="WhatsApp 8G62"
+>
+
+    <svg
+        viewBox="0 0 24 24"
+        fill="currentColor"
+    >
+
+        <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7c1.8 1 3.5 1.4 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.2-3.5-8.4ZM12.1 21.7c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.1 4.7Zm5.4-7.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.7.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.8 5.2 2.2 1 2.2.7 2.6.7.4 0 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.5-.4Z"/>
+
+    </svg>
+
+</a>
+
+
+<script>
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+window.addEventListener("load", function () {
+
+    const loader =
+        document.getElementById("loader");
+
+    setTimeout(function () {
+
+        if (loader) {
+
+            loader.classList.add("hide");
+
+        }
+
+    }, 1400);
+
+});
+
+
+/* =====================================================
+   FAILSAFE LOADER
+===================================================== */
+
+setTimeout(function () {
+
+    const loader =
+        document.getElementById("loader");
+
+    if (loader) {
+
+        loader.classList.add("hide");
+
+    }
+
+}, 5000);
+
+</script>
+
+
+</body>
+
+</html>
+
